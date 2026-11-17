@@ -24,7 +24,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: May 2025</p>
+<p class="date">Last updated: November 2026</p>
 
 <p>This Privacy Policy describes how Gold Coast Apps Studio ("we", "us", or "our") handles information in connection with the ScreenWatch mobile application ("App").</p>
 
@@ -40,7 +40,12 @@
 </ul>
 
 <h2>2. Accessibility Service</h2>
-<p>ScreenWatch uses Android's Accessibility Service solely to simulate touch interactions (taps and swipes) and to capture screen content for the Monitor feature. This capability is used exclusively to perform automations as configured by you. No screen content is recorded, stored, or transmitted outside your device.</p>
+<p>ScreenWatch uses Android's Accessibility Service for two purposes only, both started and configured by you:</p>
+<ul>
+    <li><strong>Automation</strong> — to perform the taps and swipes you place on screen, at the positions and intervals you set. The App only runs the sequence you configured; it does not make decisions or act on its own.</li>
+    <li><strong>Monitor (Premium)</strong> — when you start a sequence that includes a Monitor area, the App captures an image of the screen at the interval you set and reads only the pixels inside the area you selected, to detect whether they changed. The comparison happens in your device's memory, and each capture is discarded immediately afterwards.</li>
+</ul>
+<p>ScreenWatch does not read text or other content from apps, and screen captures are never saved to storage, shared, or transmitted outside your device. The Accessibility Service is not used for analytics, advertising, or any purpose other than those described above.</p>
 
 <h2>3. Subscription and Payments</h2>
 <p>ScreenWatch offers optional Premium subscriptions managed entirely through the Google Play Store. We do not process or store any payment information. All billing is handled by Google Play in accordance with their privacy policy.</p>
@@ -57,10 +62,15 @@
 <p>None of these permissions are used to collect or transmit data.</p>
 
 <h2>5. Data Storage</h2>
-<p>ScreenWatch stores your automation configurations (tap positions, swipe paths, timing settings) locally on your device using Android's SharedPreferences. This data never leaves your device and is deleted when you uninstall the App.</p>
+<p>ScreenWatch stores your automation configurations (tap positions, swipe paths, timing settings, configuration names), the position of the floating menu, and your subscription status locally on your device using Android's SharedPreferences. We never receive this data. If Android's backup feature is enabled on your device, Android may include these settings in your personal device backup to your Google account, as it does for other apps; this backup is controlled by you and Google, not by us. The data is deleted from your device when you uninstall the App.</p>
 
 <h2>6. Third-Party Services</h2>
-<p>ScreenWatch uses Google Play Billing for subscription management. Please refer to Google's Privacy Policy for information on how Google handles data related to payments and subscriptions.</p>
+<p>ScreenWatch uses the following Google Play services:</p>
+<ul>
+    <li><strong>Google Play Billing</strong> — to manage Premium subscriptions and check whether your subscription is active.</li>
+    <li><strong>Google Play In-App Updates</strong> — to let you know when a new version of the App is available.</li>
+</ul>
+<p>These services are provided by Google. Please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> for information on how Google handles this data.</p>
 
 <h2>7. Children's Privacy</h2>
 <p>ScreenWatch is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>

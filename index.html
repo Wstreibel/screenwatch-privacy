@@ -1,86 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScreenWatch - Privacy Policy</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 24px 16px;
-            color: #1a1a1a;
-            line-height: 1.7;
-        }
-        h1 { font-size: 24px; margin-bottom: 4px; }
-        h2 { font-size: 18px; margin-top: 32px; margin-bottom: 8px; }
-        p, li { font-size: 15px; color: #333; }
-        ul { padding-left: 20px; }
-        .date { color: #888; font-size: 13px; margin-bottom: 32px; }
-        a { color: #4A90D9; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScreenWatch: let your phone do the waiting</title>
+<meta name="description" content="ScreenWatch watches any part of your Android screen and beeps when it changes. Automatic taps and swipes too.">
+<meta property="og:title" content="ScreenWatch: let your phone do the waiting">
+<meta property="og:description" content="Mark an area of your screen, walk away, and get an alarm the moment it changes.">
+<meta property="og:image" content="https://screenwatchapp.com/media/poster.jpg">
+<meta name="theme-color" content="#0b111d">
+<link rel="icon" href="media/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p class="date">Last updated: November 2026</p>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="wordmark" href="/"><img src="media/logo.svg" alt="" width="32" height="32">ScreenWatch</a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#before">Before and after</a>
+      <a href="#uses">Uses</a>
+      <a href="#plans">Free and Premium</a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.screenwatch.app">Get the app</a>
+    </nav>
+  </div>
+</header>
 
-<p>This Privacy Policy describes how Gold Coast Apps Studio ("we", "us", or "our") handles information in connection with the ScreenWatch mobile application ("App").</p>
+<main>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <h1>Let your phone do the waiting.</h1>
+        <p class="lead">ScreenWatch watches any part of your screen and beeps when it changes.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.screenwatch.app">Get it on Google Play</a>
+          <a class="link" href="#before">See the difference</a>
+        </div>
+        <p class="hero__meta">For Android 11 and newer.</p>
+      </div>
+      <div class="screen" data-slot="hero" data-kind="product" data-alt="The 30 second promo video, vertical">
+        <video data-keep autoplay muted loop playsinline preload="metadata" poster="media/poster.jpg" aria-label="Promo: a phone marks an area of the Offers screen, beeps while its owner showers, and a new job is accepted.">
+          <source src="media/promo.mp4" type="video/mp4">
+        </video>
+        <button class="screen__toggle" data-keep type="button" aria-pressed="false" aria-label="Pause video">
+          <svg class="i-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+          <svg class="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
 
-<h2>1. Information We Do Not Collect</h2>
-<p>ScreenWatch does not collect, store, or transmit any personal information. The App operates entirely on your device. Specifically, we do not collect:</p>
-<ul>
-    <li>Personal identification information (name, email, address, phone number)</li>
-    <li>Device identifiers</li>
-    <li>Location data</li>
-    <li>Usage analytics or behavioral data</li>
-    <li>Screenshots or screen content</li>
-    <li>Any data from the apps you automate with ScreenWatch</li>
-</ul>
+  <section class="section" id="before">
+    <div class="container">
+      <div class="head">
+        <h2>Stop refreshing. Walk away.</h2>
+        <p class="lead">Mark the part of the screen you care about. Get on with your day.</p>
+      </div>
+      <div class="pair">
+        <figure class="shot">
+          <div class="shot__frame" data-slot="before" data-kind="product" data-alt="Someone on the sofa staring at their phone, waiting">
+            <img src="media/before.jpg" width="720" height="1280" alt="A man slumped on a sofa at night, staring at his phone while a coffee goes cold." loading="lazy">
+          </div>
+          <figcaption><strong>Before.</strong> Thumb on the screen, pulling to refresh for hours.</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot__frame" data-slot="after" data-kind="product" data-alt="The phone beeping on the bathroom counter while its owner showers">
+            <img src="media/after.jpg" width="720" height="1280" alt="A phone on the bathroom counter sounding an alarm while its owner is in the shower." loading="lazy">
+          </div>
+          <figcaption><strong>After.</strong> The phone sits on the counter. It beeps the moment the screen changes.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-<h2>2. Accessibility Service</h2>
-<p>ScreenWatch uses Android's Accessibility Service for two purposes only, both started and configured by you:</p>
-<ul>
-    <li><strong>Automation</strong> — to perform the taps and swipes you place on screen, at the positions and intervals you set. The App only runs the sequence you configured; it does not make decisions or act on its own.</li>
-    <li><strong>Monitor (Premium)</strong> — when you start a sequence that includes a Monitor area, the App captures an image of the screen at the interval you set and reads only the pixels inside the area you selected, to detect whether they changed. The comparison happens in your device's memory, and each capture is discarded immediately afterwards.</li>
-</ul>
-<p>ScreenWatch does not read text or other content from apps, and screen captures are never saved to storage, shared, or transmitted outside your device. The Accessibility Service is not used for analytics, advertising, or any purpose other than those described above.</p>
+  <section class="uses" id="uses">
+    <div class="container">
+      <div class="head">
+        <h2>Made for screens you wait on</h2>
+        <p class="lead">If you would leave the page open anyway, ScreenWatch can watch it.</p>
+      </div>
+      <ul class="index">
+        <li><h3>Ticket queues</h3><p>Hear it when your turn comes.</p></li>
+        <li><h3>Appointments</h3><p>Driving tests and clinics, where slots appear at random.</p></li>
+        <li><h3>Back in stock</h3><p>Anything that sells out in minutes.</p></li>
+        <li><h3>Work apps</h3><p>New offers, without pulling to refresh all shift.</p></li>
+        <li><h3>Progress bars</h3><p>Know when the export or upload is done.</p></li>
+        <li><h3>A spare phone</h3><p>An old phone on the charger, watching full time.</p></li>
+      </ul>
+    </div>
+  </section>
 
-<h2>3. Subscription and Payments</h2>
-<p>ScreenWatch offers optional Premium subscriptions managed entirely through the Google Play Store. We do not process or store any payment information. All billing is handled by Google Play in accordance with their privacy policy.</p>
+  <section class="section" id="plans">
+    <div class="container">
+      <div class="head">
+        <h2>Free to tap. Premium to watch.</h2>
+        <p class="lead">Taps and swipes are free. The screen monitor comes with Premium.</p>
+      </div>
+      <table class="plans__table">
+        <thead><tr><th scope="col">What it does</th><th scope="col">Free</th><th scope="col">Premium</th></tr></thead>
+        <tbody>
+          <tr class="lead-row"><th scope="row">Screen monitor with a repeating alarm</th><td class="no">Not included</td><td>Included</td></tr>
+          <tr><th scope="row">Automatic taps and swipes</th><td>Included</td><td>Included</td></tr>
+          <tr><th scope="row">Repeat counts, fixed or random delays</th><td>Included</td><td>Included</td></tr>
+          <tr><th scope="row">Floating menu over any app</th><td>Included</td><td>Included</td></tr>
+          <tr><th scope="row">Four named save slots</th><td>Included</td><td>Included</td></tr>
+        </tbody>
+      </table>
+      <p class="plans__note">Premium is a weekly, monthly or yearly subscription. Google Play shows the price in your currency and handles cancelling.</p>
+    </div>
+  </section>
 
-<h2>4. Permissions</h2>
-<p>The App requests the following permissions:</p>
-<ul>
-    <li><strong>Display over other apps</strong> — required to show the floating menu overlay on top of other applications</li>
-    <li><strong>Accessibility Service</strong> — required to simulate screen taps and swipes, and to capture screen content for monitoring</li>
-    <li><strong>Foreground Service</strong> — required to keep automations running reliably in the background</li>
-    <li><strong>Notifications</strong> — required to send alerts when the Monitor detects a screen change</li>
-    <li><strong>Vibration</strong> — required to vibrate the device as part of Monitor alerts</li>
-</ul>
-<p>None of these permissions are used to collect or transmit data.</p>
+  <section class="section" id="how">
+    <div class="container split">
+      <div>
+        <h2>It watches. You decide.</h2>
+        <ul class="facts">
+          <li><strong>It only raises the alarm.</strong><p>The monitor never taps for you. The next move is yours.</p></li>
+          <li><strong>It catches small changes.</strong><p>One new digit in the marked area sets it off.</p></li>
+          <li><strong>It keeps beeping.</strong><p>Sound and vibration repeat until you tap the screen.</p></li>
+          <li><strong>It stays on your phone.</strong><p>Nothing about your screen is collected or sent.</p></li>
+        </ul>
+        <p class="hero__meta">Keep the screen on and the app you are watching open.</p>
+      </div>
+      <figure class="shot">
+        <div class="shot__frame" data-slot="accepted" data-kind="product" data-alt="An Offers screen showing a new job, accepted">
+          <img src="media/accepted.jpg" width="720" height="1280" alt="An Offers screen on a phone showing a new job with an Accepted button." loading="lazy">
+        </div>
+      </figure>
+    </div>
+  </section>
 
-<h2>5. Data Storage</h2>
-<p>ScreenWatch stores your automation configurations (tap positions, swipe paths, timing settings, configuration names), the position of the floating menu, and your subscription status locally on your device using Android's SharedPreferences. We never receive this data. If Android's backup feature is enabled on your device, Android may include these settings in your personal device backup to your Google account, as it does for other apps; this backup is controlled by you and Google, not by us. The data is deleted from your device when you uninstall the App.</p>
+  <section class="close">
+    <div class="container close__inner">
+      <img src="media/logo.svg" alt="" width="120" height="120">
+      <div>
+        <h2>Put the phone down.</h2>
+        <p>ScreenWatch will tell you when to pick it up.</p>
+      </div>
+      <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.screenwatch.app">Get it on Google Play</a>
+    </div>
+  </section>
+</main>
 
-<h2>6. Third-Party Services</h2>
-<p>ScreenWatch uses the following Google Play services:</p>
-<ul>
-    <li><strong>Google Play Billing</strong> — to manage Premium subscriptions and check whether your subscription is active.</li>
-    <li><strong>Google Play In-App Updates</strong> — to let you know when a new version of the App is available.</li>
-</ul>
-<p>These services are provided by Google. Please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> for information on how Google handles this data.</p>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="wordmark" href="/"><img src="media/logo.svg" alt="" width="32" height="32">ScreenWatch</a>
+        <p>Screen alerts, taps and swipes for Android.</p>
+      </div>
+      <div class="footer__col">
+        <h2>App</h2>
+        <ul>
+          <li><a href="#before">Before and after</a></li>
+          <li><a href="#uses">Uses</a></li>
+          <li><a href="#plans">Free and Premium</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:goldcoastappsstudio@proton.me">Email us</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">© 2026 Gold Coast Apps Studio. Google Play is a trademark of Google LLC.</p>
+  </div>
+</footer>
 
-<h2>7. Children's Privacy</h2>
-<p>ScreenWatch is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
-
-<h2>8. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. We encourage you to review this page periodically.</p>
-
-<h2>9. Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, please contact us at:<br>
-<a href="mailto:goldcoastappsstudio@proton.me">goldcoastappsstudio@proton.me</a></p>
-
+<script>
+(() => {
+  const v = document.querySelector('.screen video');
+  const b = document.querySelector('.screen__toggle');
+  if (!v || !b) return;
+  const set = (paused) => { b.setAttribute('aria-pressed', String(paused)); b.setAttribute('aria-label', paused ? 'Play video' : 'Pause video'); };
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); set(true); }
+  b.addEventListener('click', () => { if (v.paused) { v.play(); set(false); } else { v.pause(); set(true); } });
+  new IntersectionObserver(([e]) => { if (b.getAttribute('aria-pressed') === 'true') return; e.isIntersecting ? v.play().catch(() => {}) : v.pause(); }).observe(v);
+})();
+</script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
 </body>
 </html>
